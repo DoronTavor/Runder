@@ -1,0 +1,22 @@
+number        The event                          What should be happen                                                                     Status
+___________________________________________________________________________________________________________________________________________
+1          | User joins the Firebase           | The user should be appended on the map                                                   | checked
+2          | User leaves the Firebase          | The user should be removed from the map                                                  | checked
+3          | User joins a group as member      | The user's marker should be Invisible                                                    | checked
+4          | User creates a group as a manager | The user's marker should be changed to a group's marker                                  | checked
+5          | Manager leaves a group            | The maker of the manager should be changed to a user marker                              | checked
+6          | User leaves a group               | The marker of the user should be VISIBLE                                                 | checked
+7          | Group is deleted                  | The marker of each runner should be VISIBLE and manager's marker should be regular       | checked
+8          | 2 users join the FireBase         | Both of the users should be append on the map
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RunderCommunityActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="408dp"
+        android:layout_height="80dp"
+        android:background="@drawable/upperpartshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="72dp"
+            android:background="@drawable/centeralizelogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333"></ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/PictureManagingGroup"
+            android:layout_width="49dp"
+            android:layout_height="45dp"
+            android:foregroundGravity="right"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/NameManagingGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.096">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/NameManagingGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="TextView"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="404dp"
+        android:layout_height="692dp"
+
+
+        android:layout_marginTop="80dp"
+        android:background="@drawable/anotherbck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:id="@+id/TextViewGroupsChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="חברי הקבוצה הם: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RV_Groups"
+            android:layout_width="388dp"
+            android:layout_height="550dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextViewGroupsChoose"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/MapViewManaging"
+            android:layout_width="406dp"
+            android:layout_height="788dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons2"
+            android:layout_width="399dp"
+            android:layout_height="75dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/MapViewManaging"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TextViewGroupsChoose"
+            app:layout_constraintVertical_bias="0.843">
+
+            <ImageButton
+                android:id="@+id/SetMapManaging"
+                android:layout_width="@dimen/image_button_width"
+                android:layout_height="@dimen/image_button_height"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/white"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/BackChoosing"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.466"
+                app:srcCompat="@drawable/maps"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/startRunBtn"
+                android:layout_width="54dp"
+                android:layout_height="52dp"
+                android:background="@drawable/start_runc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.22"
+                app:layout_constraintStart_toEndOf="@+id/PauseRunBtn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/PauseRunBtn"
+                android:layout_width="54dp"
+                android:layout_height="52dp"
+                android:background="@drawable/pause_run"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/SetMapManaging"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.521"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/StopRunBtn"
+                android:layout_width="54dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/stop_run"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/PauseRunBtn"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toEndOf="@+id/SetMapManaging"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/ExitForRunner"
+                android:layout_width="63dp"
+                android:layout_height="53dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/StopRunBtn"
+                app:layout_constraintStart_toEndOf="@+id/SetMapManaging"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/leavegroupicon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_for_details"
+            android:layout_width="409dp"
+            android:background="@drawable/newsma"
+            android:layout_height="95dp"
+            app:layout_constraintBottom_toTopOf="@+id/cons2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/TempPicManaging"
+                android:layout_width="49dp"
+                android:layout_height="44dp"
+                android:src="@drawable/temppic"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.069"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Time_Text_View"
+                android:layout_width="150dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="52dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="זמן:"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/TempTextViewManaging"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="200dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="טמפ"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/TempPicManaging"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.163" />
+
+            <TextView
+                android:id="@+id/Distance_Text_View"
+                android:layout_width="139dp"
+                android:layout_height="42dp"
+
+
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="מרחק:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.659"
+                app:layout_constraintStart_toEndOf="@+id/Time_Text_View"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.981" />
+
+            <TextView
+                android:id="@+id/TextViewStatus"
+                android:layout_width="170dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="הקבוצה של"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TextViewGroupName"
+                android:layout_width="170dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="הקבוצה של"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="49dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toStartOf="@+id/Time_Text_View"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TempPicManaging"
+                app:srcCompat="@drawable/running_time_icon" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Distance_Text_View"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewStatus"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/distance_logo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LayoutStats"
+            android:layout_width="381dp"
+            android:layout_height="412dp"
+            android:background="@drawable/newbi"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/layout_for_details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextViewGroupsChoose"
+            app:layout_constraintVertical_bias="0.402">
+
+            <TextView
+                android:id="@+id/tempTextViewManagingStats"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="טמפ"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tempPicStats" />
+
+            <TextView
+                android:id="@+id/TempText"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="טמפרטורה:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/GroupNameTextView"
+                app:layout_constraintHorizontal_bias="0.26"
+                app:layout_constraintStart_toEndOf="@+id/tempPicStats"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/GroupNameTextView"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="הקבוצה של:"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/StatusStatsTV"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.712"
+                app:layout_constraintStart_toEndOf="@+id/tempTextViewManagingStats"
+                app:layout_constraintTop_toBottomOf="@+id/GroupNameTextView" />
+
+            <ImageView
+                android:id="@+id/tempPicStats"
+                android:layout_width="49dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/temppic"
+                app:civ_border_color="#FF000000"
+
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.019" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="זמן קבוצתי"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.249"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tempTextViewManagingStats"
+                app:layout_constraintVertical_bias="0.078" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="זמן אישי"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView24"
+                app:layout_constraintHorizontal_bias="0.357"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewGroupTime"
+                app:layout_constraintVertical_bias="0.126" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="מהירות אישית"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView24"
+                app:layout_constraintHorizontal_bias="0.411"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMyTime"
+                app:layout_constraintVertical_bias="0.232" />
+
+            <TextView
+                android:id="@+id/TextViewGroupTime"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.249"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textViewMyTime"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/TextViewMyDistance"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/TextViewMySpeed"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/TextViewMyDistance"
+                app:layout_constraintHorizontal_bias="0.411"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <TextView
+                android:id="@+id/TextViewGroupDistance"
+                android:layout_width="102dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.907"
+                app:layout_constraintStart_toEndOf="@+id/TextViewGroupTime"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/TextViewMyDistance"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/TextViewGroupTime"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/TextViewGroupSpeed"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="28dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/TextViewMySpeed"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="מרחק קבוצתי"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/StatusStatsTV" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="מרחק אישי"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewGroupDistance" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text=" מהירות קבוצתית"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.861"
+                app:layout_constraintStart_toEndOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewMyDistance" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="53dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/TextViewGroupSpeed"
+                app:layout_constraintEnd_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewMyDistance"
+                app:srcCompat="@drawable/speed_logo_icon" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="53dp"
+                android:layout_height="44dp"
+                app:layout_constraintBottom_toTopOf="@+id/TextViewMySpeed"
+                app:layout_constraintEnd_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMyTime"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/speed_logo_icon" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="49dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMyTime"
+                app:layout_constraintTop_toBottomOf="@+id/textView25"
+                app:srcCompat="@drawable/running_time_icon" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="49dp"
+                android:layout_height="37dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/TextViewGroupTime"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                app:srcCompat="@drawable/running_time_icon" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="65dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/TextViewGroupDistance"
+                app:layout_constraintTop_toBottomOf="@+id/StatusStatsTV"
+                app:srcCompat="@drawable/distance_logo" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="65dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                app:srcCompat="@drawable/distance_logo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/ButtonForExitWhenManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonForExitWhenManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/MessageRunBtn"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:background="@drawable/messagebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ButtonForExitWhenManager"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

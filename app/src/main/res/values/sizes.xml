@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_width_regular">228dp</dimen>
+    <dimen name="button_height_regular">55dp</dimen>
+    <dimen name="button_width_small">114dp</dimen>
+    <dimen name="button_height_small">50dp</dimen>
+    <dimen name="button_text_size">20dp</dimen>
+    <dimen name="edit_text_box_width">157dp</dimen>
+    <dimen name="edit_text_box_width_large">270dp</dimen>
+    <dimen name="edit_text_box_height">50dp</dimen>
+    <dimen name="text_box_txt_size_large">20dp</dimen>
+    <dimen name="text_box_txt_size_medium">15dp</dimen>
+    <dimen name="image_button_width">50dp</dimen>
+    <dimen name="image_button_height">60dp</dimen>
+    <dimen name="message_box_txt_size">20dp</dimen>
+    <dimen name="message_box_width">197dp</dimen>
+    <dimen name="message_box_width_small">99dp</dimen>
+    <dimen name="message_box_height">104dp</dimen>
+    <dimen name="message_box_height_small">54dp</dimen>
+    <dimen name="message_box_for_group_height">19dp</dimen>
+    <dimen name="message_box_for_group_width">150dp</dimen>
+    <dimen name="message_box_txt_size_small">10dp</dimen>
+    <dimen name="message_box_txt_size_med">15dp</dimen>
+    <dimen name="message_box_for_group_height_small">21dp</dimen>
+    <dimen name="message_box_for_group_width_small">86dp</dimen>
+    <dimen name="message_box_width_large">243dp</dimen>
+    <dimen name="google_sign_up_activity_width">208dp</dimen>
+    <dimen name="google_sign_up_activity_height">49dp</dimen>
+</resources>

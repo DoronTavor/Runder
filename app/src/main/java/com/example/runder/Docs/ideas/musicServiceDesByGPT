@@ -1,0 +1,47 @@
+From chat GPT:
+Downloading and playing songs from YouTube in Android Studio requires a few steps. Please note that downloading copyrighted music from YouTube is illegal in many countries, and you should only download and use music that you have the legal right to do so.
+
+Here are the steps to download and play songs from YouTube in Android Studio using Java:
+
+First, you need to find a library that can help you download videos from YouTube. One popular library is YouTubeExtractor, which is available on GitHub.
+
+Add the library to your project by adding the following dependency to your build.gradle file:
+dependencies {
+    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:v1.7.1'
+}
+In your activity or fragment, create an instance of the YouTubeExtractor class and call its extract method, passing in the YouTube video URL as a parameter:
+String videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Replace with your own video URL
+YouTubeExtractor extractor = new YouTubeExtractor(this);
+extractor.extract(videoUrl, new YouTubeExtractor.YouTubeExtractorListener() {
+    @Override
+    public void onExtractionComplete(SparseArray<YtFile> sparseArray, VideoMeta videoMeta) {
+        // Do something with the extracted video and metadata
+    }
+
+    @Override
+    public void onExtractionFailed(Throwable throwable) {
+        // Handle the extraction failure
+    }
+});
+In the onExtractionComplete method, you can get the URL of the video in various formats, including audio-only formats like MP3. Here's an example of how to download the audio in MP3 format:
+String mp3Url = null;
+for (int i = 0; i < sparseArray.size(); i++) {
+    int key = sparseArray.keyAt(i);
+    YtFile ytFile = sparseArray.get(key);
+    if (ytFile.getFormat().getExtension().equals("mp3")) {
+        mp3Url = ytFile.getUrl();
+        break;
+    }
+}
+
+if (mp3Url != null) {
+    // Download the MP3 file using a library like Retrofit or OkHttp
+}
+Once you've downloaded the MP3 file, you can play it using a media player like MediaPlayer or ExoPlayer. Here's an example using MediaPlayer:
+MediaPlayer mediaPlayer = new MediaPlayer();
+mediaPlayer.setDataSource(mp3FilePath);
+mediaPlayer.prepare();
+mediaPlayer.start();
+(This we gonna do via service)
+
+

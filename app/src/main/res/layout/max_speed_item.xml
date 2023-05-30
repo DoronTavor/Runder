@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:text="מהירות מקסימלית"
+        android:textColor="@color/purple_200"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/MaxSpeedText"
+        android:background="@drawable/boxtext"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:inputType="numberDecimal"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.cardview.widget.CardView>

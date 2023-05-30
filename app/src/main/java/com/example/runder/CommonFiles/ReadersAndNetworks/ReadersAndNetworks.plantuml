@@ -1,0 +1,213 @@
+@startuml
+
+title __READERSANDNETWORKS's Class Diagram__\n
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ContinueCB {
+            {abstract} + continueRunning()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.CoordinatesReader {
+            ~ context : Context
+            ~ myRunner : RunnersModelFull
+            + CoordinatesReader()
+            + CoordinatesReader()
+            + returnMarkers()
+            + returnMarkersForChoosing()
+            + updateGroupMarkers()
+            - bitmapDescriptorFromVector()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.FireBaseReader {
+            ~ context : Context
+            + FireBaseReader()
+            + addGroupToUser()
+            + addToModel()
+            + checkAndRemoveUserFromTeam()
+            + choosingGroupActivityEventListener()
+            + getCurrentUser()
+            + hasTeam()
+            + isGroups()
+            + mainActivityOnDataChanged()
+            + managingGroupActivityEventListenerForManager()
+            + managingGroupActivityEventListenerForMember()
+            + matchUserAndGroup()
+            + memberActionsWhenManagerLeaves()
+            + presentName()
+            {static} + removeTeam()
+            + returnName()
+            + setRunningStatus()
+            + setTeamStatus()
+            + setTextForButton()
+            + setTimeForRun()
+            + updateGroupPosition()
+            + updateGroupTime()
+            + updateGroupToFireBase()
+            + updatePosition()
+            + updateRunnerStatus()
+            + updateTeamStatus()
+            + waitForStartTime()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.GeocodingMethods {
+            {static} + getAddress()
+            {static} + getCity()
+            {static} + getCountry()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.GetCurrentUserInterface {
+            {abstract} + onFinished()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.GoogleMapFunctions {
+            + GoogleMapFunctions()
+            + addPointsToPolyLine()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.HasCallBack {
+            {abstract} + moveAfterSuccessCallBack()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.HaveOrHaventGroupCB {
+            {abstract} + noGroupsCallBack()
+            {abstract} + thereGroupsCallBack()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.PointForMapCB {
+            {abstract} + callBackForChange()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.PresentAfterRecivingCB {
+            {abstract} + PresentAfterReciving()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ReaderCallBack {
+            {abstract} + callBackAfterRead()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ShowTimeCB {
+            {abstract} + onFinishedUpload()
+            {abstract} + onRunStarted()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.TempReader {
+            ~ context : Context
+            + TempReader()
+            + getTemp()
+            + weatherStats()
+            - WeatherByLatLon()
+            - weatherForManaging()
+            - weatherForStatsManaging()
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.TimeAndDate {
+            {static} + returnMessageByHour()
+        }
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

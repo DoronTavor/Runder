@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Runder</string>
+    <string-array name="gender_array">
+        <item> מין</item>
+        <item>זכר</item>
+        <item>נקבה</item>
+
+    </string-array>
+    <string-array name="avg_distance_array">
+        <item> מרחק ריצה ממוצע</item>
+        <item>קטן מ2 ק"מ</item>
+        <item>קטן מ5 ק"מ</item>
+        <item>קטן מ10 ק"מ</item>
+        <item>קטן מחצי מרתון</item>
+    </string-array>
+    <string-array name="age_array">
+        <item> טווח גילאים</item>
+        <item>עד 12</item>
+        <item>12 עד 20</item>
+        <item>20 עד 30</item>
+        <item>30 עד 50</item>
+        <item>50 עד 70</item>
+        <item> לא משנה</item>
+    </string-array>
+
+    <string name="key"> AIzaSyAft4YwOhy-xnw4VKRV8jCRFLeL7xPvA8A</string>
+    <string name="keyWeather"> 316ea7f012fc730bbb8ff809e6a18d24</string>
+    <string name="hintres"> מרחק ריצה</string>
+    <string name="twiloSID">ACaccd3694eb430fa0c2b1c694964f3a13</string>
+    <string name="twiloToken">ACaccd3694eb430fa0c2b1c694964f3a13</string>
+
+
+</resources>

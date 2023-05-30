@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "577623114520",
+    "firebase_url": "https://runder-787a1-default-rtdb.firebaseio.com",
+    "project_id": "runder-787a1",
+    "storage_bucket": "runder-787a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577623114520:android:4eb466093b426f8296146d",
+        "android_client_info": {
+          "package_name": "com.example.runder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577623114520-3p4tv03ejp6iir8uoh6b4vrlmcgkholb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.runder",
+            "certificate_hash": "eca97d89a9bf78c09ec22a2135e94425ff8f8237"
+          }
+        },
+        {
+          "client_id": "577623114520-e3duurjj1gehb64mgb62c5rnfnnotr9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCbFfaI_Q3RP6B1RHtMqNFJd0q3swAl-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577623114520-e3duurjj1gehb64mgb62c5rnfnnotr9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

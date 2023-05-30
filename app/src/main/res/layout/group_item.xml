@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    android:layout_marginTop="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardViewGroup"
+        android:layout_width="421dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/NameTextViewGroup"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="שם: "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/PictureGroupItem"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/StatusTextViewGroup"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="סטטוס"
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/PictureGroupItem"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.202" />
+
+        <TextView
+            android:id="@+id/LocationTextViewGroup"
+            android:layout_width="162dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="מיקום"
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StatusTextViewGroup"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <TextView
+            android:id="@+id/AgeTextViewGroup"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="left"
+            android:text="גיל"
+            android:textAlignment="center"
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toTopOf="@+id/SpeedTextViewGroup"
+            app:layout_constraintEnd_toStartOf="@+id/NameTextViewGroup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/SpeedTextViewGroup"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="left"
+            android:text="קצב"
+            android:textAlignment="center"
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/StatusTextViewGroup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.423" />
+
+        <TextView
+            android:id="@+id/DistanceTextViewGroup"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="left"
+            android:text="מרחק ריצה"
+            android:textAlignment="center"
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LocationTextViewGroup"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/PictureGroupItem"
+            android:layout_width="81dp"
+            android:layout_height="82dp"
+            android:foregroundGravity="right"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.944"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.46">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+The idea is like that:
+because all the app is in the concept of "community", the music should be also.
+So, When clicking in the music button in the main activity/managing group activity,
+you will see all of the songs that the community ADDED to the DataBase,or he can add his song(Enter the song's name, song's artist and link from youtube/ Spotify).
+When a song is clicked, the link of the song will be downloaded to the app via service, and then the song will be downloaded.
+the user can download many songs in one time, but the songs will be played in the order he pressed.
+
+The Firebase's music child will look like that- for example
+"Music":{
+    "Song One":{
+        "Name" : "Don't Speak",
+        "Artist": "No Doubt",
+        "Link" : "https://www.youtube.com/watch?v=TR3Vdo5etCQ"
+    }
+}

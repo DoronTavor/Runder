@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:layout_gravity="right"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/StartingTimeTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="זמן התחלה:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/EndingTimeTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="זמן סיום:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StartingTimeTextView"
+            app:layout_constraintVertical_bias="0.047" />
+
+        <TextView
+            android:id="@+id/RunningTimeTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="זמן ריצה:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EndingTimeTextView"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <TextView
+            android:id="@+id/DistancePassedTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="מרחק שעבר:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RunningTimeTextView"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <TextView
+            android:id="@+id/AmountOfRunnersTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="כמות רצים:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DistancePassedTextView"
+            app:layout_constraintVertical_bias="0.089" />
+
+        <TextView
+            android:id="@+id/RunningSpeedTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="קצב ריצה:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AmountOfRunnersTextView"
+            app:layout_constraintVertical_bias="0.156" />
+
+        <TextView
+            android:id="@+id/StartingPlaceTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="מיקום התחלת הריצה:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.996"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RunningSpeedTextView"
+            app:layout_constraintVertical_bias="0.262" />
+
+        <TextView
+            android:id="@+id/EndingPlaceTextView"
+            android:layout_width="@dimen/message_box_for_group_width"
+            android:layout_height="@dimen/message_box_for_group_height"
+            android:fontFamily="sans-serif"
+            android:foregroundGravity="right"
+            android:text="מיקום סיום הריצה:  "
+            android:textColor="@color/message_box_txt_color"
+            android:textSize="@dimen/message_box_txt_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StartingPlaceTextView"
+            app:layout_constraintVertical_bias="0.636" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/MapRunDetails"
+            android:layout_width="207dp"
+            android:layout_height="286dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/AmountOfRunnersTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

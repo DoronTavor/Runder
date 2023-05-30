@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuMyDetails"
+        android:title="הפרטים שלי" />
+    <item
+        android:id="@+id/menuRunderCommunity"
+        android:title="קהילת Runder" />
+    <item
+        android:id="@+id/menuLogOut"
+        android:title="LogOut" />
+    <item
+        android:id="@+id/menuAbout"
+        android:title="אודות" />
+</menu>

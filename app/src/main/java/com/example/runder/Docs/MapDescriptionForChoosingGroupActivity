@@ -1,0 +1,22 @@
+Number        The Event                         What should be Happened
+____________________________________________________________________________________________
+ 1         |New group is created               | Check the attributes of the group       | checked
+ 1.1       |Attributes fit's to user pref's    | Present the Group on the map            | checked
+ 1.2       | There isn't a match               | DON'T present the group on the map      | checked
+ 2         | A group is deleted                | If it was in the map before, remove it  | checked
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |
+           |                                   |

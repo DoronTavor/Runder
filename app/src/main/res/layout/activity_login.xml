@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="454dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="72dp"
+            android:background="@drawable/centeralizelogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461"></ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="407dp"
+        android:layout_height="711dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/backone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.09">
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="@dimen/edit_text_box_width_large"
+            android:layout_height="@dimen/edit_text_box_height"
+            android:layout_marginBottom="436dp"
+            android:background="@drawable/boxtext"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="כתובת מייל"
+            android:fontFamily="sans-serif"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_box_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/text_box_txt_size_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.111"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="@dimen/edit_text_box_width_large"
+            android:layout_height="@dimen/edit_text_box_height"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="436dp"
+            android:background="@drawable/boxtext"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="סיסמא"
+            android:fontFamily="sans-serif"
+            android:inputType="textPassword"
+            android:textColor="@color/text_box_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/text_box_txt_size_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Email"
+            app:layout_constraintVertical_bias="0.288"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="159dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="352dp"
+            android:layout_marginEnd="44dp"
+            android:text="התחבר באמצעות"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/purple_200"
+            android:textSize="30dp"
+
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/GoogleLog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.701" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="197dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="352dp"
+            android:layout_marginEnd="208dp"
+            android:text="אין לך חשבון? צור חשבון"
+            android:textColor="@color/purple_200"
+            android:fontFamily="sans-serif"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/GoogleLog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <ImageButton
+            android:id="@+id/RegularLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Password"
+            app:srcCompat="@drawable/logbtn"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/GoogleLog"
+            android:layout_width="@dimen/image_button_width"
+            android:layout_height="@dimen/image_button_height"
+            android:layout_marginEnd="88dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.762"
+            app:srcCompat="@drawable/google"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/CreateAccount"
+            android:layout_width="@dimen/image_button_width"
+            android:layout_height="@dimen/image_button_height"
+            android:layout_marginBottom="132dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/oneperson"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

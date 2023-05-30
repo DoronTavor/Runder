@@ -1,0 +1,377 @@
+@startuml
+
+title __ACTIVITIES's Class Diagram__\n
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.AboutActivity {
+          ~ back : ImageButton
+          {static} ~ name : TextView
+          ~ newRec : RecyclerView
+          {static} ~ pic : CircleImageView
+          - adapter2 : FirebaseRecyclerAdapter
+          - builder2 : Builder
+          - dialog2 : AlertDialog
+          - linearLayoutManager2 : LinearLayoutManager
+          + createDialog2()
+          {static} + setValueToView()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.ChoosingGroupActivity {
+          {static} + MyPREFERENCES : String
+          + toast : Toast
+          ~ back : ImageButton
+          ~ button : FloatingActionButton
+          ~ choose : TextView
+          ~ coReader : CoordinatesReader
+          ~ mapBtn : ImageButton
+          ~ mapView : MapView
+          {static} ~ name : TextView
+          ~ newRec : RecyclerView
+          {static} ~ picture : CircleImageView
+          ~ sharedPreferences : SharedPreferences
+          ~ view : ViewGroup
+          - adapter : FirebaseRecyclerAdapter
+          - adapter3 : FirebaseRecyclerAdapter
+          - builder : Builder
+          - builder1 : Builder
+          - builder2 : Builder
+          - builder3 : Builder
+          - dialog : AlertDialog
+          - dialog1 : AlertDialog
+          - dialog2 : AlertDialog
+          - dialog3 : AlertDialog
+          - linearLayoutManager : LinearLayoutManager
+          - linearLayoutManager3 : LinearLayoutManager
+          - recyclerView : RecyclerView
+          - sure : Button
+          - unsure : Button
+          + createDialog()
+          + createDialog2()
+          + moveAfterSuccessCallBack()
+          + moveToManaging()
+          + moveToManagingForExisting()
+          + onItemCLicked()
+          + onLowMemory()
+          + onMapReady()
+          + onSaveInstanceState()
+          {static} + setPointsForMap()
+          {static} + setValueToView()
+          # onCreate()
+          # onDestroy()
+          # onPause()
+          # onStart()
+          # onStop()
+          - initGoogleMap()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.GoogleSignUpActivity {
+          {static} + globalVars : GlobalVars
+          ~ avgDistance : Spinner
+          ~ avgSpeed : EditText
+          ~ btnAdd : ImageButton
+          ~ count : Long
+          ~ date : EditText
+          ~ gender : Spinner
+          ~ serialNumber : String
+          - avgDistanceStr : String
+          - avgSpeedStr : String
+          - dateStr : String
+          - genderStr : String
+          + setSerialNumber()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.IWantRunActivity {
+          ~ adapter2 : FirebaseRecyclerAdapter
+          ~ ageDifference : EditText
+          ~ ageSpinner : Spinner
+          ~ ageStr : String
+          ~ avgDistanceStr : String
+          ~ avgSpeed : EditText
+          ~ back : ImageButton
+          ~ distanceSpinner : Spinner
+          ~ distanceText : String
+          ~ email : String
+          {static} ~ image : CircleImageView
+          ~ iwantRun : ImageButton
+          ~ mesages : TextView
+          {static} ~ name : TextView
+          ~ newRec : RecyclerView
+          ~ recyclerView : RecyclerView
+          ~ speedPicker : NumberPicker
+          - builder2 : Builder
+          - dialog2 : AlertDialog
+          - linearLayoutManager2 : LinearLayoutManager
+          + createDialog2()
+          + setLayoutToViews()
+          {static} + setValueToView()
+          # onCreate()
+          # onDestroy()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.LoginActivity {
+          ~ db : FirebaseDatabase
+          ~ googleLoginBtn : ImageButton
+          ~ gsc : GoogleSignInClient
+          ~ gso : GoogleSignInOptions
+          ~ myDialog : Dialog
+          + OpenVideoScreen()
+          + checkUserSignedInFB()
+          + getVideoTime()
+          + signOut()
+          # onActivityResult()
+          # onCreate()
+          - SignIn()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.MainActivity {
+          {static} + model : RunnersModelFull
+          {static} + modelGlobal : RunnersModelFull
+          ~ currentDateandTime : String
+          ~ currentUserIsReady : boolean
+          ~ date : TextView
+          ~ email : String
+          {static} ~ fusedLocationClient : FusedLocationProviderClient
+          ~ iWantRunBtn : ImageButton
+          ~ image : CircleImageView
+          ~ locationCallbackUpdate : LocationCallback
+          {static} ~ locationRequest : LocationRequest
+          ~ mapView : MapView
+          ~ menuBtn : ImageButton
+          ~ music : ImageButton
+          ~ name : TextView
+          ~ newRec : RecyclerView
+          ~ reader : FireBaseReader
+          ~ sdf : SimpleDateFormat
+          ~ sharedpreferences : SharedPreferences
+          ~ statusTV : TextView
+          {static} ~ temp : TextView
+          {static} ~ tempPic : ImageView
+          ~ userMarker : Marker
+          - adapter2 : FirebaseRecyclerAdapter
+          - builder : Builder
+          - builder2 : Builder
+          - cancel : Button
+          - dialog : AlertDialog
+          - dialog2 : AlertDialog
+          - linearLayoutManager2 : LinearLayoutManager
+          - sureWantRun : Button
+          + connectViewsToId()
+          + createDialog()
+          + createDialog2()
+          + createDialogForLeaving()
+          + getCurrentUser()
+          + isHashMapContains()
+          + isHashMapContainsKey()
+          + manageRunnersOnMap()
+          + onLowMemory()
+          + onMapReady()
+          + onSaveInstanceState()
+          + setMyPosition()
+          {static} + setPoints()
+          + setValueToViews()
+          {static} + setWeather()
+          + signOut()
+          + updateUserPosition()
+          # onCreate()
+          # onDestroy()
+          # onPause()
+          # onResume()
+          # onStart()
+          # onStop()
+          - bitmapDescriptorFromVector()
+          - getActivityName()
+          - initGoogleMap()
+          - isTimeBigger()
+          - presentRunDistance()
+          - setupLocationUpdates()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.ManagingGroupActivity {
+          ~ ButtonForExitWhenManager : ImageButton
+          ~ GroupNameTextView : TextView
+          ~ StatusStatsTV : TextView
+          ~ TextViewGroupDistance : TextView
+          ~ TextViewGroupSpeed : TextView
+          ~ TextViewGroupTime : TextView
+          ~ TextViewMyDistance : TextView
+          ~ TextViewMySpeed : TextView
+          ~ coReader : CoordinatesReader
+          ~ detailsLayout : ConstraintLayout
+          ~ exitForRunner : ImageButton
+          ~ exited : boolean
+          ~ googleMapFunctions : GoogleMapFunctions
+          ~ imageButtonStats : ImageButton
+          ~ layoutStats : ConstraintLayout
+          ~ mapBtn : ImageButton
+          ~ mapView : MapView
+          ~ minutes : int
+          {static} ~ name : TextView
+          ~ newRec : RecyclerView
+          ~ pause : Button
+          {static} ~ picture : CircleImageView
+          ~ seconds : int
+          ~ start : Button
+          {static} ~ status : Button
+          ~ statusTV : TextView
+          ~ stop : Button
+          {static} ~ temp : TextView
+          {static} ~ tempPic : ImageView
+          ~ tempPicStats : ImageView
+          ~ tempTextViewManagingStats : TextView
+          ~ textViewGroup : TextView
+          ~ textViewGroupName : TextView
+          ~ textViewMyTime : TextView
+          - adapter : FirebaseRecyclerAdapter
+          - adapter2 : FirebaseRecyclerAdapter
+          - builder2 : Builder
+          - dialog2 : AlertDialog
+          - linearLayoutManager : LinearLayoutManager
+          - linearLayoutManager2 : LinearLayoutManager
+          - recyclerView : RecyclerView
+          {static} + addPointsToPolyLine()
+          + calculateAndPresentTime()
+          + createDialog()
+          + onLowMemory()
+          + onMapReady()
+          + onSaveInstanceState()
+          {static} + setButtonText()
+          {static} + setValueToView()
+          {static} + setWeather()
+          # onCreate()
+          # onDestroy()
+          # onPause()
+          # onStart()
+          # onStop()
+          - initGoogleMap()
+          - setIdsToStatsLayout()
+          - setTextToViewsOfStats()
+          - stopClickListenerMethods()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.MyDetailsActivity {
+          {static} + age : TextView
+          {static} + email : TextView
+          {static} + firstSecName : TextView
+          {static} + gender : TextView
+          {static} + picture : CircleImageView
+          ~ back : ImageButton
+          {static} + setValueToTheViews()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.RegularSignUp {
+          ~ recyclerView : RecyclerView
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.RunderCommunityActivity {
+          ~ back : ImageButton
+          {static} ~ name : TextView
+          {static} ~ picture : CircleImageView
+          - adapter : FirebaseRecyclerAdapter
+          - linearLayoutManager : LinearLayoutManager
+          - recyclerView : RecyclerView
+          {static} + setValueToCurrentViews()
+          # onCreate()
+          # onStart()
+          # onStop()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.SettingsActivity {
+          ~ about : Button
+          ~ btnBack : ImageButton
+          ~ community : Button
+          ~ details : Button
+          ~ gsc : GoogleSignInClient
+          ~ gso : GoogleSignInOptions
+          {static} ~ imageView : CircleImageView
+          ~ logOut : Button
+          {static} ~ name : TextView
+          ~ newRec : RecyclerView
+          - adapter2 : FirebaseRecyclerAdapter
+          - builder : Builder
+          - builder2 : Builder
+          - cancel : Button
+          - dialog : AlertDialog
+          - dialog2 : AlertDialog
+          - linearLayoutManager2 : LinearLayoutManager
+          - logOutSure : Button
+          + createDialog()
+          + createDialog2()
+          + setIdToViews()
+          {static} + setValueToViews()
+          + signOut()
+          # onCreate()
+      }
+    }
+  }
+  
+
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> HasCallBack
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> OnMapReadyCallback
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> SelectListener
+  com.example.runder.Activities.MainActivity .up.|> OnMapReadyCallback
+  com.example.runder.Activities.ManagingGroupActivity .up.|> OnMapReadyCallback
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

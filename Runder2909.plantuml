@@ -1,0 +1,1003 @@
+@startuml
+
+title __RUNDER2909's Class Diagram__\n
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.AboutActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.AboutActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.ChoosingGroupActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.ChoosingGroupActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.GoogleSignUpActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.GoogleSignUpActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.IWantRunActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.IWantRunActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.LoginActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.LoginActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.MainActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.MainActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.ManagingGroupActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.ManagingGroupActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.MyDetailsActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.MyDetailsActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.RegularSignUp {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.RegularSignUp {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.RunderCommunityActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.RunderCommunityActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.SettingsActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Activities {
+      class com.example.runder.Activities.SettingsActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.ChoosingGroupAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.ChoosingGroupAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.CommunityAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.CommunityAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.GoogleSignUpAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.GoogleSignUpAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.IWantRunAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.IWantRunAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.ManagingGroupAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.ManagingGroupAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.MyDetailsAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.MyDetailsAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.RegularSignUpAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Adapters.Adapters {
+      class com.example.runder.Adapters.Adapters.RegularSignUpAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    class com.example.runder.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.runder {
+    class com.example.runder.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.CBForTemp {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.CBForTemp {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.CBforLOc {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.CBforLOc {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.InterfaceForName {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.InterfaceForName {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.PresentWhenManagerEnds {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace CBS {
+        interface com.example.runder.CommonFiles.CBS.PresentWhenManagerEnds {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.DebugModeService {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.DebugModeService {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.GlobalVars {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.GlobalVars {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MarkerAndMail {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MarkerAndMail {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyApplication {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyApplication {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyForegroundService {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyForegroundService {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyLatLng {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyLatLng {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyRecyclerView {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyRecyclerView {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyRunConfiguration {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyRunConfiguration {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ContinueCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ContinueCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.CoordinatesReader {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.CoordinatesReader {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.FireBaseReader {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.FireBaseReader {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.GeocodingMethods {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.GeocodingMethods {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.GetCurrentUserInterface {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.GetCurrentUserInterface {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.GoogleMapFunctions {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.GoogleMapFunctions {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.HasCallBack {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.HasCallBack {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.HaveOrHaventGroupCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.HaveOrHaventGroupCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.PointForMapCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.PointForMapCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.PresentAfterRecivingCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.PresentAfterRecivingCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ReaderCallBack {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ReaderCallBack {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ShowTimeCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        interface com.example.runder.CommonFiles.ReadersAndNetworks.ShowTimeCB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.TempReader {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.TempReader {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.TimeAndDate {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      namespace ReadersAndNetworks {
+        class com.example.runder.CommonFiles.ReadersAndNetworks.TimeAndDate {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      interface com.example.runder.CommonFiles.SelectListener {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      interface com.example.runder.CommonFiles.SelectListener {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    class com.example.runder.ExampleInstrumentedTest {
+    }
+  }
+  
+
+  namespace com.example.runder {
+    class com.example.runder.ExampleUnitTest {
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Holders {
+      class com.example.runder.Holders.GoogleSignUpViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Holders {
+      class com.example.runder.Holders.GoogleSignUpViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Holders {
+      class com.example.runder.Holders.IWantRunViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Holders {
+      class com.example.runder.Holders.IWantRunViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Holders {
+      class com.example.runder.Holders.RegularSignUpViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Holders {
+      class com.example.runder.Holders.RegularSignUpViewHolder {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.ChoosingGroupModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.ChoosingGroupModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.CommunityModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.CommunityModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.ManagingModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.ManagingModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.Position {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.Position {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunStatisticsModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunStatisticsModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunnerModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunnerModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunnersModelFull {
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunnersModelFull {
+      }
+    }
+  }
+  
+
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> HasCallBack
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> OnMapReadyCallback
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> SelectListener
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> com.example.runder.CommonFiles.ReadersAndNetworks.HasCallBack
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> com.example.runder.CommonFiles.SelectListener
+  com.example.runder.Activities.ChoosingGroupActivity .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.example.runder.Activities.MainActivity .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.example.runder.Activities.MainActivity .up.|> OnMapReadyCallback
+  com.example.runder.Activities.ManagingGroupActivity .up.|> OnMapReadyCallback
+  com.example.runder.Activities.ManagingGroupActivity .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.example.runder.CommonFiles.DebugModeService o-- com.example.runder.CommonFiles.DebugModeService.DebugModeReceiver : receiver
+  com.example.runder.CommonFiles.MyApplication .up.|> Application.ActivityLifecycleCallbacks
+  com.example.runder.CommonFiles.MyApplication .up.|> android.app.Application.ActivityLifecycleCallbacks
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

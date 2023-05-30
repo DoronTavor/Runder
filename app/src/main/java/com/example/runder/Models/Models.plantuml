@@ -1,0 +1,284 @@
+@startuml
+
+title __MODELS's Class Diagram__\n
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.ChoosingGroupModel {
+          - AgeRange : String
+          - CurrentMessage : String
+          - CurrentPosition : HashMap<String, Double>
+          - Distance : double
+          - ElapsedTime : String
+          - GroupID : String
+          - GroupName : String
+          - Hour : String
+          - Image : String
+          - ManagerName : String
+          - RunnersIds : HashMap<String, String>
+          - RunningDistance : String
+          - RunningSpeed : Double
+          - Status : String
+          + ChoosingGroupModel()
+          + ChoosingGroupModel()
+          + getAgeRange()
+          + getCurrentMessage()
+          + getCurrentPosition()
+          + getDistance()
+          + getElapsedTime()
+          + getGroupID()
+          + getGroupName()
+          + getHour()
+          + getImage()
+          + getManagerName()
+          + getRunnersIds()
+          + getRunningDistance()
+          + getRunningSpeed()
+          + getStatus()
+          + setAgeRange()
+          + setCurrentMessage()
+          + setCurrentPosition()
+          + setDistance()
+          + setElapsedTime()
+          + setGroupID()
+          + setGroupName()
+          + setHour()
+          + setImage()
+          + setManagerName()
+          + setRunnersIds()
+          + setRunningDistance()
+          + setRunningSpeed()
+          + setStatus()
+          + toMap()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.CommunityModel {
+          - Address : String
+          - BirthDate : String
+          - FirstSecondName : String
+          - Gender : String
+          - Picture : String
+          + CommunityModel()
+          + CommunityModel()
+          + getAddress()
+          + getBirthDate()
+          + getFirstSecondName()
+          + getGender()
+          + getPicture()
+          + setAddress()
+          + setBirthDate()
+          + setFirstSecondName()
+          + setGender()
+          + setPicture()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.ManagingModel {
+          ~ Email : String
+          - ActiveTeam : String
+          - CurrentPosition : HashMap<String, Double>
+          - ID : String
+          + ManagingModel()
+          + ManagingModel()
+          + getActiveTeam()
+          + getCurrentPosition()
+          + getEmail()
+          + getID()
+          + setActiveTeam()
+          + setCurrentPosition()
+          + setEmail()
+          + setID()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.Position {
+          ~ Latitude : double
+          ~ Longitude : double
+          + Position()
+          + Position()
+          + getLatitude()
+          + getLongitude()
+          + setLatitude()
+          + setLongitude()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunStatisticsModel {
+          - Distance : double
+          - ElapsedTime : String
+          - GroupElapsedTime : double
+          - GroupName : String
+          - MyElapsedTime : double
+          - groupSpeed : double
+          - myDistance : String
+          - mySpeed : double
+          - myTime : String
+          + RunStatisticsModel()
+          + RunStatisticsModel()
+          + getDistance()
+          + getElapsedTime()
+          + getGroupElapsedTime()
+          + getGroupName()
+          + getGroupSpeed()
+          + getMyDistance()
+          + getMyElapsedTime()
+          + getMySpeed()
+          + getMyTime()
+          + roundNumbers()
+          + setDistance()
+          + setElapsedTime()
+          + setGroupName()
+          + setGroupSpeed()
+          + setMyDistance()
+          + setMySpeed()
+          + setMyTime()
+          + setNewElapsedTIme()
+          + setSpeeds()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunnerModel {
+          - AvgDistance : String
+          - AvgSpeed : double
+          - CurrentPosition : HashMap<String, Double>
+          - Email : String
+          - FirstSecondName : String
+          - Gender : String
+          - LocationLastUpdateDate : String
+          - LocationLastUpdateHour : String
+          - Picture : String
+          + RunnerModel()
+          + RunnerModel()
+          + getAvgDistance()
+          + getAvgSpeed()
+          + getCurrentPosition()
+          + getEmail()
+          + getFirstSecondName()
+          + getGender()
+          + getLocationLastUpdateDate()
+          + getLocationLastUpdateHour()
+          + getPicture()
+          + setAvgDistance()
+          + setAvgSpeed()
+          + setCurrentPosition()
+          + setEmail()
+          + setFirstSecondName()
+          + setGender()
+          + setLocationLastUpdateDate()
+          + setLocationLastUpdateHour()
+          + setPicture()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace Models {
+      class com.example.runder.Models.RunnersModelFull {
+          - ActiveTeam : String
+          - AvgDistance : String
+          - AvgSpeed : double
+          - BirthDate : String
+          - CurrentPosition : HashMap<String, Double>
+          - Email : String
+          - FirstSecondName : String
+          - Gender : String
+          - ID : String
+          - LocationLastUpdateDate : String
+          - LocationLastUpdateHour : String
+          - Picture : String
+          - RunningStatus : String
+          - Status : String
+          - city : String
+          - country : String
+          - height : double
+          - maxDistance : String
+          - maxSpeed : String
+          - serialNumber : String
+          - weight : double
+          + RunnersModelFull()
+          + RunnersModelFull()
+          + RunnersModelFull()
+          + RunnersModelFull()
+          + RunnersModelFull()
+          + getActiveTeam()
+          + getAvgDistance()
+          + getAvgSpeed()
+          + getBirthDate()
+          + getCity()
+          + getCountry()
+          + getCurrentPosition()
+          + getEmail()
+          + getFirstSecondName()
+          + getGender()
+          + getHeight()
+          + getID()
+          + getLocationLastUpdateDate()
+          + getLocationLastUpdateHour()
+          + getMaxDistance()
+          + getMaxSpeed()
+          + getPicture()
+          + getRunningStatus()
+          + getSerialNumber()
+          + getStatus()
+          + getWeight()
+          + setActiveTeam()
+          + setAvgDistance()
+          + setAvgSpeed()
+          + setBirthDate()
+          + setCity()
+          + setCountry()
+          + setCurrentPosition()
+          + setEmail()
+          + setFirstSecondName()
+          + setGender()
+          + setHeight()
+          + setID()
+          + setLocationLastUpdateDate()
+          + setLocationLastUpdateHour()
+          + setMaxDistance()
+          + setMaxSpeed()
+          + setPicture()
+          + setRunningStatus()
+          + setSerialNumber()
+          + setStatus()
+          + setWeight()
+          + toString()
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,206 @@
+@startuml
+
+title __COMMONFILES's Class Diagram__\n
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.DebugModeService {
+          + onBind()
+          + onCreate()
+          + onDestroy()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.DebugModeService.DebugModeReceiver {
+          + onReceive()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.GlobalVars {
+          {static} + GLOBALTEAMID : String
+          {static} + GlobalHours : int
+          {static} + GlobalMinutes : int
+          {static} + GlobalSeconds : int
+          {static} + MAPVIEW_BUNDLE_KEY : String
+          {static} + MARKERSFORMANAGING : ArrayList<MarkerOptions>
+          {static} + MainActivityCallBack : ValueEventListener
+          {static} + MainActivityChildDeleted : ChildEventListener
+          {static} + ManagingGroupActivityEventListener : ValueEventListener
+          {static} + StatusForChoosing : String
+          {static} + StatusForManager : String
+          {static} + StatusForMember : String
+          {static} + StatusForNotRunning : String
+          {static} + TotalDistance : double
+          {static} + WEATHER_KEY : String
+          {static} + cBforLOc : CBforLOc
+          {static} + calendar : Calendar
+          {static} + choosingGroupActivityMarkers : HashMap<String, Marker>
+          {static} + choosingGroupActivityValueEvent : ValueEventListener
+          + count : int
+          {static} + currentGroup : ChoosingGroupModel
+          {static} + currentRunner : RunnersModelFull
+          {static} + currentTeamLatlng : LatLng
+          {static} + date : Date
+          {static} + dateFormat : SimpleDateFormat
+          {static} + groupMarker : Marker
+          {static} + isGroupEvent : ValueEventListener
+          {static} + isHave : boolean
+          {static} + isInDebug : boolean
+          {static} + mainActivityGroupsMarkers : HashMap<String, Marker>
+          {static} + mainActivityMarkers : HashMap<String, Marker>
+          {static} + managingActivityMarkers : HashMap<String, Marker>
+          {static} + map : GoogleMap
+          {static} + mapForChoosing : GoogleMap
+          {static} + mapForManaging : GoogleMap
+          {static} + markerAndMails : List<MarkerAndMail>
+          {static} + markerGlobal : Marker
+          {static} + myEvent : ValueEventListener
+          {static} + newMainActivityValueEvent : ValueEventListener
+          {static} + numOfActive : int
+          {static} + numTotal : int
+          {static} + numberOfGroups : int
+          {static} + oldMarker : Marker
+          {static} + passedTime : String
+          {static} + polyLineOptionsGlobal : PolylineOptions
+          {static} + polylineForManaging : Polyline
+          {static} + polylineOptions : PolylineOptions
+          {static} + prevTime : long
+          {static} + runDistance : TextView
+          {static} + runTime : TextView
+          {static} + statusGroup : String
+          {static} + teamLoc : Location
+          {static} + userAndMarker : Hashtable<String, Marker>
+          + viewType : int
+          {static} - defColor : int
+          {static} + CastToNumber()
+          + GlobalVars()
+          {static} + returnHebrewStatus()
+          {static} + returnId()
+          + setViewType()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MarkerAndMail {
+          - email : String
+          - markerOptions : MarkerOptions
+          + MarkerAndMail()
+          + getEmail()
+          + getMarkerOptions()
+          + setEmail()
+          + setMarkerOptions()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyApplication {
+          - currentActivity : Activity
+          {static} - instance : MyApplication
+          + getCurrentActivity()
+          {static} + getInstance()
+          + onActivityCreated()
+          + onActivityDestroyed()
+          + onActivityPaused()
+          + onActivityResumed()
+          + onActivitySaveInstanceState()
+          + onActivityStarted()
+          + onActivityStopped()
+          + onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyForegroundService {
+          - currentActivity : Activity
+          + onBind()
+          + onCreate()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyLatLng {
+          - latitude : Double
+          - longitude : Double
+          + MyLatLng()
+          + MyLatLng()
+          + getLatitude()
+          + getLongitude()
+          + setLatitude()
+          + setLongitude()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyRecyclerView {
+          - scrollable : boolean
+          + GoogleSignUpViewHolder()
+          + MyRecyclerView()
+          + MyRecyclerView()
+          + MyRecyclerView()
+          + setAdapter()
+          + setLayoutManager()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      class com.example.runder.CommonFiles.MyRunConfiguration {
+          - groupID : String
+          {static} - myRunConfiguration : MyRunConfiguration
+          + getGroupID()
+          {static} + getInstance()
+          + setGroupID()
+          - MyRunConfiguration()
+      }
+    }
+  }
+  
+
+  namespace com.example.runder {
+    namespace CommonFiles {
+      interface com.example.runder.CommonFiles.SelectListener {
+          {abstract} + onItemCLicked()
+      }
+    }
+  }
+  
+
+  com.example.runder.CommonFiles.DebugModeService o-- com.example.runder.CommonFiles.DebugModeService.DebugModeReceiver : receiver
+  com.example.runder.CommonFiles.DebugModeService +-down- com.example.runder.CommonFiles.DebugModeService.DebugModeReceiver
+  com.example.runder.CommonFiles.MyApplication .up.|> Application.ActivityLifecycleCallbacks
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
